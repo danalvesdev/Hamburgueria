@@ -6,50 +6,71 @@
     box-sizing: border-box;
 }
 
+:root {
+  --fundo:    #0D0D0D;  /* preto profundo */
+  --card:     #1E1E1E;  /* cinza escuro */
+  --destaque: #E84C0E;  /* laranja forte */
+  --texto:    #F5F5F5;  /* branco suave */
+  --secundar: #B0B0B0;  /* cinza claro */
+}
+
 body{
     width: 100%;
     height: 90vh;
-    background-color: white;
+    background-color: var(--texto);
+    font-family: 'Poppins', sans-serif;
+
 }
 
-header{
+header, #perfil{
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 10px;
-    background-color: black;
+    background-color: #0f0f0ff6 ;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 header > h1{
     font-size: 1.5em;
-    margin-right: 50px;
-    color: white;
-    text-align: center;
+    color: var(--destaque);
+    margin-left: 10px;
+    text-align: left;
+}
+
+i#burguer{
+    display: flex;
+    color: var(--texto);
+    margin-right: 25px;
 }
 
 nav ul{
-    display: flex;
+    display: none;
     gap: 10px;
 }
 
 nav li , a{
+    display: flex;
+    flex-flow: column nowrap;
     text-decoration: none;
     list-style: none;
     font-size: 1.2em;
     padding: 10px;
     margin: 5px 0px;
     cursor: pointer;
-    color: white;
+    color:  var(--texto);
 }
 
 main{
-    display: grid;
-    grid-template-columns: 3;
     text-align: center;
 }
 
-section#classicos{
-    background-color: rgb(14, 0, 0);
-    margin: 10px 9px;
-    color: aliceblue;
+section#inicio{
+    background-color: var(--fundo);
+    color: var(--texto);
+}
+
+div#destaques h3{
+    text-align: left;
+    margin: 15px;
 }
