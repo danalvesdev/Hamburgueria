@@ -64,7 +64,7 @@ nav li , a{
 }
 
 main{
-    background: linear-gradient(180deg, var(--fundo), #1A1A1A);
+    background-color: var(--fundo);
     font-family: 'Poppins', sans-serif;
     text-align: center;
 }
@@ -92,7 +92,7 @@ div#destaques > h3{
     display: flex;
     flex-direction: row;
     background-color: var(--card);
-    margin: 5px;
+    margin: 8px;
     border: 5px solid var(--destaque);
     border-radius: 10px;
     box-shadow: 0px 0px 5px var();
@@ -145,7 +145,7 @@ section#sobre{
     flex-direction: column;
     justify-content: space-around;
     text-align: left;
-    padding: 20px;
+    padding: 15px;
     background-color: var(--fundo);
     color: var(--texto);
 }
