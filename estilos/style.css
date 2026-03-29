@@ -18,24 +18,27 @@ body{
     width: 100%;
     height: 90vh;
     background-color: var(--texto);
-    font-family: 'Poppins', sans-serif;
-
 }
 
-header, #perfil{
+header{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     padding: 10px;
-    background-color: #0f0f0ff6 ;
-    font-family: 'Bebas Neue', sans-serif;
+    background: linear-gradient(180deg, var(--fundo), #141414);
 }
 
 header > h1{
-    font-size: 1.5em;
-    color: var(--destaque);
+    font-size: 22px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--texto);
     margin-left: 10px;
     text-align: left;
+}
+
+span{
+    color: var(--destaque);
 }
 
 i#burguer{
@@ -62,11 +65,12 @@ nav li , a{
 }
 
 main{
+    background: linear-gradient(180deg, var(--fundo), #1A1A1A);
+    font-family: 'Poppins', sans-serif;
     text-align: center;
 }
 
 section#inicio{
-    background-color: var(--fundo);
     color: var(--texto);
 }
 
@@ -76,8 +80,9 @@ div#destaques{
     margin: 5px;
 }
 
-div#destaques h3{
+div#destaques > h3{
     text-align: left;
+    font-family: Orbitron, sans-serif;
     font-size: 1.5em;
     padding: 15px 0px 5px 8px;
     margin: 15px 0px 5px 2px;
@@ -90,24 +95,27 @@ div#destaques h3{
     margin: 5px;
     border: 5px solid var(--destaque);
     border-radius: 10px;
+    box-shadow: 0px 0px 5px var();
 }
 
 .foto-burguer{
     display: flex;
     flex-flow: row wrap;
     width: 100%;
-    height: 155px;
+    height: 120px;
 }
 
 div.titulo{
     line-height: 15px;
-    margin: 5px;
+    font-size: 15px;
+    margin:  5px 4px;
 }
 
-div.titulo h3{
+div.titulo h2{
     color: var(--destaque);
+    text-align: left;
     font-weight: bold;
-    margin: 10px;
+    line-height: 1em;
 }
 
 div.descrição p{
@@ -125,8 +133,9 @@ div.preco{
 }
 
 #btn{
-    background-color: var(--destaque);
+    background: linear-gradient(45deg, #FF6B00, #FF8C42);
     color: var(--texto);
+    font-weight: normal;
     padding: 3px;
     border-radius: 5px;
 }
