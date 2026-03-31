@@ -1,8 +1,10 @@
-function menuclique(){       
-    const menu = document.getElementById('menu');
-    if(menu.style.display == 'none'){
-        menu.style.display = 'block';
+function menuclique(){
+    const menuLateral = document.getElementById('menu-lateral');
+    const atual = getComputedStyle(menuLateral).right;
+
+    if (atual === '0px') {
+        menuLateral.style.right = '-100%';
     } else {
-        menu.style.display = 'none';
+        menuLateral.style.right = '0';
     }
 }
