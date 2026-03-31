@@ -95,7 +95,6 @@ div#destaques > h3{
     margin: 8px;
     border: 5px solid var(--destaque);
     border-radius: 10px;
-    box-shadow: 0px 0px 5px var();
 }
 
 .foto-burguer{
@@ -136,33 +135,43 @@ div.preco{
     background: linear-gradient(45deg, #FF6B00, #FF8C42);
     color: var(--texto);
     font-weight: normal;
-    padding: 3px;
+    padding: 5px;
     border-radius: 5px;
 }
 
 section#sobre{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    text-align: left;
-    padding: 15px;
+    align-items: center;
+    padding: 10px;
     background-color: var(--fundo);
     color: var(--texto);
 }
 
-section#sobre img{
-    margin-right: 10px;
-    vertical-align: middle;
+.sobre-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 10px;
 }
 
-section#sobre h3{
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 1.5em;
+div.card-sobre{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card);
+    margin: 5px;
+    border-radius: 10px;
+    padding: 15px;
 }
 
-section#sobre p{
-    color: rgba(255, 255, 255, 0.651);
-    margin-left: 65px;
+div.card-sobre p, i{
+    font-size: 0.9em;
+    color: var(--secundar);
+}
+
+div.card-sobre:hover{
+    background-color: var(--destaque);
+    color: var(--fundo);
+    transition: 0.3s;
 }

@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+     <script src="https://kit.fontawesome.com/cdf86462f5.js" crossorigin="anonymous"></script>
     <title>Hamburgueria do Daniel</title>
 </head>
 <body>
     <header>
         <h1>Burguer <span>House</span></h1>
         <nav>
-            <i id="burguer" class="material-symbols-outlined" onclick="menuClick()">menu</i>
-            <ul>
+            <i class="material-symbols-outlined" onclick="menuclique()">menu</i>
+            <ul id="menu">
                 <li><a href="">inicio</a></li>
                 <li><a href=""></a></li>
                 <li><a href="">Sobre</a></li>
@@ -86,16 +87,24 @@
         <section id="cardapio"></section>
         <section id="contato"></section>
         <section id="sobre">
-                <h2>Por que escolher a gente ?</h2>
-                <h3><img width="48" height="48" src="https://img.icons8.com/emoji/48/carrot-emoji.png" alt="carrot-emoji"/> 100% natural</h3>
-                <p>Ingredientes frescos e de qualidade.</p>
-                <h3><img width="48" height="48" src="https://img.icons8.com/color/48/deliveryman.png" alt="deliveryman"/> Chega rápido</h3>
-                <p>Entrega eficiente.</p>
-                <h3><img width="48" height="48" src="https://img.icons8.com/fluency/48/christmas-star.png" alt="christmas-star"/> Altas notas</h3>
-                <p>Clientes satisfeitos.</p>
-
+            <h2>Como somos <span>diferentes</span></h2>
+            <div class="sobre-cards">
+                <div class="card-sobre">
+                        <h3><i class="fa-solid fa-burger" style="color: rgb(255, 212, 59);"></i>100% natural</h3>
+                        <p>Ingredientes frescos e de qualidade.</p>
+                </div>
+                <div class="card-sobre">
+                        <h3><i class="fa-regular fa-alarm-clock" style="color: rgb(255, 212, 59);"></i>Chega rápido</h3>
+                        <p>Entrega eficiente.</p>
+                </div>
+                <div class="card-sobre">
+                        <h3><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>Altas notas</h3>
+                        <p>Clientes satisfeitos.</p>
+                </div>
+            </div>
         </section>
         <div id="modal"></div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
