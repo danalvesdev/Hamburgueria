@@ -63,7 +63,7 @@ i#burguer{
     background-color: var(--fundo);
     padding: 20px;
     transition: 0.3s;
-    z-index: 1;
+    z-index: 9999;
 }
 
 #menu-lateral h2{
@@ -232,4 +232,8 @@ div.card-sobre:hover{
     background-color: var(--destaque);
     color: var(--fundo);
     transition: 0.3s;
+}
+
+#cardapio, #contato, #sobre{
+    display: none;
 }
