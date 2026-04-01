@@ -2,7 +2,7 @@ const nomes = ["x-Bacon", "X-Burguer", "Smash Burguer Clássico", "Smash Cheddar
 
 const precos = [45, 35, 40, 60, 35, 25, 30, 40, 50, 70]
 
-const imagens = ["img/X-Bacon.jpg", "img/X-Burguer.jpg", "img/Smash-Burguer-Clássico.jpg", "img/Smash-Cheddar-Bacon-Duplo.jpg", "img/Sky-Burguer.jpg", "img/Bacon-Caramelizado.jpg", "img/Banco-Crispy.jpg", "img/Burguer-Lab.jpg", "img/Burguer-Artesanal.jpg","img/Combo-X-Bacon-Cheddar.jpg"]
+const imagens = ["img/X-Bacon.jpg", "img/X-Burguer-do-Bob's.jpg", "img/Smash-Burger-Clássico.jpg", "img/Smash-Cheddar-Bacon-Duplo.jpg", "img/Sky-Burger.jpg", "img/Bacon-Caramelizado.jpg", "img/Bacon-Crispy.jpg", "img/Burger-Lab.jpg", "img/Burguer-Artesanal -Clássico.jpg","img/Combo-X-Bacon-Cheddar.jpg"]
 
 const descricoes = [
   "Pão brioche, blend 180g, bacon crocante, queijo cheddar e alface americana.",

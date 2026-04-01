@@ -1,6 +1,7 @@
 function gerarCardapio(){
 let cardapio = document.getElementById("cardapio");
 let html = "";
+    html += `<h2>Cardápio</h2>`;
     for(let i = 0; i < nomes.length; i++){
     html += `
     <div class="burguer-semanal">

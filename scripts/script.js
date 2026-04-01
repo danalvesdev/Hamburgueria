@@ -13,10 +13,9 @@ function mostrar(id){
     document.getElementById('inicio').style.display = 'none';
     document.getElementById('cardapio').style.display = 'none';
     document.getElementById('contato').style.display = 'none';
-    document.getElementById('sobre').style.display = 'none';
     document.getElementById(id).style.display = 'block';
-
     if(id === 'cardapio'){
         gerarCardapio();
     }
 }
+mostrar('inicio');

@@ -17,6 +17,7 @@
 body{
     width: 100%;
     height: 10dvh;
+    background-color: var(--fundo);
 }
 
 header{
@@ -24,8 +25,6 @@ header{
     flex-flow: row nowrap;
     justify-content: space-between;
     padding: 10px;
-    position: sticky;
-    z-index: 1000;
     background: linear-gradient(180deg, var(--fundo), #141414);
 }
 
@@ -47,8 +46,9 @@ i#burguer{
     display: flex;
     color: var(--texto);
     position: sticky;
-    z-index: 2;
+    z-index: 99999;
     padding: 10px;
+    margin-left: 100px;
     cursor: pointer;
 }
 
@@ -149,23 +149,29 @@ div#destaques > h3{
 .burguer-semanal{
     display: flex;
     flex-direction: row;
+    align-items: stretch;
     background-color: var(--card);
-    margin: 8px;
+    margin: 5px;
     border: 5px solid var(--destaque);
     border-radius: 10px;
+    padding: 0;
+    overflow: hidden;
 }
 
 .foto-burguer{
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
-    height: 120px;
+    width: 120px;
+    height: 90%;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    flex-shrink: 0;
 }
+
 
 div.titulo{
     line-height: 15px;
     font-size: 15px;
-    margin:  5px 4px;
+    margin:  10px;
 }
 
 div.titulo h2{
@@ -175,10 +181,11 @@ div.titulo h2{
     line-height: 1em;
 }
 
-div.descrição p{
+div.descricoes p{
     font-size: 1em;
     text-align: justify;
-    padding: 5px;
+    padding: 10px;
+    
 }
 
 div.preco{
@@ -234,6 +241,30 @@ div.card-sobre:hover{
     transition: 0.3s;
 }
 
-#cardapio, #contato, #sobre{
+#cardapio, #contato{
     display: none;
+    background-color: var(--fundo);
+}
+
+#cardapio .burguer-semanal{
+    margin: 10px;
+}
+
+#cardapio h2{
+    margin: 5px;
+    background-color: var(--card);
+    margin: 10px;
+    color: var(--destaque);
+    border-radius: 10px;
+}
+
+#cardapio div.descricao{
+    color: rgba(255, 255, 255, 0.541);
+    text-align: justify;
+}
+
+#cardapio .preco{
+    color: var(--destaque);
+    font-size: 1.2em;
+    font-weight: bold;
 }
