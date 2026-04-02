@@ -121,6 +121,18 @@ nav li:hover {
     transition: 0.3s;
 }
 
+div#horas{
+    background-color: var(--card);
+    color: var(--texto);
+    width: 90%;
+    font-size: 1.3em;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px var(--destaque);
+    padding: 3px;
+    margin: 10px auto;
+    margin-bottom: -30px;
+}
+
 main{
     background-color: var(--fundo);
     font-family: 'Poppins', sans-serif;

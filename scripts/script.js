@@ -9,6 +9,16 @@ function menuclique(){
     }
 }
 
+let horas = document.getElementById('horas');
+    let data = new Date();
+    data = data.getHours();
+    data >= 18 && data < 23 ? horas.innerHTML = "Aberto agora 🟢" : horas.innerHTML = "Fechado no momento 🔴 <br> volte mais tarde!";
+    if(data >= 18 && data < 23){
+        horas.style.backgroundColor = 'var(--destaque)';
+    }else{
+        horas.style.backgroundColor = 'var(--card)';
+    }
+
 function mostrar(id){
     document.getElementById('inicio').style.display = 'none';
     document.getElementById('cardapio').style.display = 'none';
