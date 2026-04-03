@@ -150,12 +150,12 @@ div#destaques{
     margin: 5px;
 }
 
-div#destaques > h3{
+#inicio > h3{
     text-align: left;
     font-family: Orbitron, sans-serif;
     font-size: 1.5em;
     padding: 15px 0px 5px 8px;
-    margin: 15px 0px 5px 2px;
+    margin: 40px 0px 5px 2px;
 }
 
 .burguer-semanal{
@@ -177,7 +177,6 @@ div#destaques > h3{
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
-
 
 div.titulo{
     line-height: 15px;
@@ -256,8 +255,17 @@ div.card-sobre:hover{
     background-color: var(--fundo);
 }
 
-#cardapio .burguer-semanal{
-    margin: 10px;
+
+#cardapio div.burguer-cardapio{
+     display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background-color: var(--card);
+    margin: 5px;
+    border: 5px solid var(--destaque);
+    border-radius: 10px;
+    padding: 0;
+    overflow: hidden;
 }
 
 #cardapio h2{
