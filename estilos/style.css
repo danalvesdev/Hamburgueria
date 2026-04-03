@@ -172,11 +172,10 @@ div#destaques > h3{
 
 .foto-burguer{
     width: 120px;
-    height: 90%;
+    height: auto;
     object-fit: cover;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    flex-shrink: 0;
 }
 
 
@@ -196,8 +195,7 @@ div.titulo h2{
 div.descricoes p{
     font-size: 1em;
     text-align: justify;
-    padding: 10px;
-    
+    padding: 5px;
 }
 
 div.preco{

@@ -12,7 +12,7 @@ function menuclique(){
 let horas = document.getElementById('horas');
     let data = new Date();
     data = data.getHours();
-    data >= 18 && data < 23 ? horas.innerHTML = "Aberto agora 🟢" : horas.innerHTML = "Fechado no momento 🔴 <br> volte mais tarde!";
+    data >= 18 && data < 23 ? horas.innerHTML = "Aberto agora 🟢 <br> 18hrs até 23hrs" : horas.innerHTML = "Fechado no momento 🔴 <br> volte mais tarde!";
     if(data >= 18 && data < 23){
         horas.style.backgroundColor = 'var(--destaque)';
     }else{
