@@ -1,6 +1,7 @@
 @media screen and (min-width: 768px){
    section#inicio > div#destaques{
         display: grid;
+        grid-template-columns:  repeat(3,1fr);
         gap: 16px;
         padding: 16px;
     }
