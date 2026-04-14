@@ -1,8 +1,8 @@
 @media screen and (min-width: 768px){
-    div#destaques{
+   section#inicio > div#destaques{
         display: grid;
-        grid-template-columns:  1fr auto;
-        grid-template-rows: 1fr 1fr;
+        gap: 16px;
+        padding: 16px;
     }
 
     #inicio > h3{
@@ -12,21 +12,13 @@
     }
 
     div.burguer-semanal{
-        width: 250px;
+        width: 100%;
         display: flex;
         flex-flow: column nowrap;
-        margin: 10px;
     }
 
     .foto-burguer{
-        width: 250px;
-        height: 200px;
-    }
-
-    #cardapio div.burguer-cardapio{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto auto;
-        background-color: red;
+        width: 100%;
+        height: 250px;
     }
 }
