@@ -28,4 +28,24 @@ function mostrar(id){
         gerarCardapio();
     }
 }
+
+const modal = document.getElementById('modal')
+const btnFechar = document.getElementById('btn-fechar')
+
+function abrirModal(index){
+    modal.style.display = 'block'
+    document.getElementById('modal-img').src = imagens[index]
+    document.getElementById('modal-nome').innerHTML = nomes[index]
+    document.getElementById('modal-descricao').innerHTML = descricoes[index]
+    document.getElementById('modal-preco').innerHTML = 'R$' + precos[index]
+}
+
+function fecharModal(){
+    modal.style.display = 'none'
+}
+
+window.onload = function(){
+    btnFechar.addEventListener('click', fecharModal);
+}
+
 mostrar('inicio');
