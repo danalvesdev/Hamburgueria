@@ -33,15 +33,17 @@ const modal = document.getElementById('modal')
 const btnFechar = document.getElementById('btn-fechar')
 
 function abrirModal(index){
-    modal.style.display = 'block'
+    document.querySelector('main').style.display = 'none'
     document.getElementById('modal-img').src = imagens[index]
     document.getElementById('modal-nome').innerHTML = nomes[index]
     document.getElementById('modal-descricao').innerHTML = descricoes[index]
     document.getElementById('modal-preco').innerHTML = 'R$' + precos[index]
+    modal.style.display = 'block'
 }
 
 function fecharModal(){
     modal.style.display = 'none'
+    document.querySelector('main').style.display = 'block'
 }
 
 window.onload = function(){
