@@ -39,10 +39,12 @@ function abrirModal(index){
     document.getElementById('modal-descricao').innerHTML = descricoes[index]
     document.getElementById('modal-preco').innerHTML = 'R$' + precos[index]
     modal.style.display = 'block'
+    btnFechar.addEventListener('click', fecharModal)
 }
 
 function fecharModal(){
     modal.style.display = 'none'
+    btnFechar.removeEventListener('click', fecharModal)
     document.querySelector('main').style.display = 'block'
 }
 
